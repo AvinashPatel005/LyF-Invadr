@@ -8,8 +8,10 @@ const News = () => {
 
   useEffect(() => {
     try {
+      console.log(process.env.REACT_APP_NEWS_API_KEY);
+      
       fetch(
-        "https://newsapi.org/v2/everything?q=india&language=en&apiKey=0087aa11dfda4bc2b54391f066c033e5"
+        "https://newsapi.org/v2/everything?q=india&language=en&apiKey="+process.env.REACT_APP_NEWS_API_KEY
       )
         .then((res) => res.json())
         .then((data) => {

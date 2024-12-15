@@ -15,7 +15,7 @@ const Weather = ({ city }) => {
   useEffect(() => {
     try {
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b0f12168a57cf18819767f6e84b3a06f`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=`+process.env.REACT_APP_WEATHER_API_KEY 
       )
         .then((res) => res.json())
         .then((data) => setWeather(data));

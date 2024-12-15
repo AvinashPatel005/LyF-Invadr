@@ -6,7 +6,7 @@ let isLoaded = false;
 function Quote() {
   const [quote, setQuote] = useState("Happiness and moral duty are inseparably connected.");
   const [author, setAuthor] = useState("-George Washington");
-  const API_KEY = 'fNdaxDRYxlJzwdH/rn2hew==u7TAl8WsRAWhedvX';
+  const API_KEY = process.env.REACT_APP_QUOTE_API_KEY;
   const { theme } = useTheme();
 
   useEffect(() => {
