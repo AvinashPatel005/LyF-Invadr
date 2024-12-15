@@ -10,7 +10,7 @@ const News = () => {
     try {
       
       fetch(
-        "https://newsapi.org/v2/everything?q=india&language=en&apiKey="+process.env.REACT_APP_NEWS_API_KEY
+        "https://sz77nrktjulow6pgs5xvuh4wia0yaasb.lambda-url.ap-south-1.on.aws/"
       )
         .then((res) => res.json())
         .then((data) => {
