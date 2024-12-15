@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useTheme } from '../ThemeContext'; // Assuming you have a ThemeContext for managing themes
+import { useTheme } from '../ThemeContext';
 import cloudyImg from "../assets/cloudy.png";
 import drizzleImg from "../assets/drizzle.png";
 import foggyImg from "../assets/foggy.png";
